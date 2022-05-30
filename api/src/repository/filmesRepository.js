@@ -29,3 +29,13 @@ export async function inserirFilmes(filme){
 
     return resposta.affectedRows;
 }
+
+export async function deletarFilme(id){
+    const comando = `
+    DELETE FROM tb_filme 
+        WHERE id_filme = ? `
+    
+    const [resposta] = await con.query(comando, [id])
+    
+    return resposta.affectedRows;
+}

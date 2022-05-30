@@ -49,9 +49,6 @@ UPDATE tb_filme
 DELETE FROM tb_filme 
       WHERE id_filme = 1;
 
-
-
-
 -- CSU05:: consultar todos os filmes      
 SELECT id_filme			id,
 	  nm_filme			nome,
