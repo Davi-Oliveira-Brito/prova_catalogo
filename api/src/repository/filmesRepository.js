@@ -53,3 +53,12 @@ export async function listarTodosFilme() {
     const [linhas] = await con.query(comando);
     return linhas;
 }
+
+export async function alterarImagem(imagem, id) {
+    const comando = `    UPDATE tb_filme 
+        SET img_filme     =  ?
+        WHERE id_filme      =  ?
+    `;
+    const [linhas] = await con.query(comando, [imagem,id]);
+    return linhas;
+}
