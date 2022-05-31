@@ -49,6 +49,7 @@ export async function listarTodosFilme() {
                 dt_lancamento	lancamento,
                 bt_disponivel	disponivel
         FROM tb_filme`;
+        
     const [linhas] = await con.query(comando);
     return linhas;
 }
