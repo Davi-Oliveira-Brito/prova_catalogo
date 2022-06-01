@@ -1,4 +1,4 @@
-(1)/POST    /usuario/login
+(1)/POST    /usuario/login  X
 request body
 {
     "email":"",
@@ -13,7 +13,7 @@ response(200)
 
 |||||||||||||||||||||||||||||||||||||||||
 
-(2) /POST   /filme/
+(2) /POST   /filme/  X
 requestbody
 
 response
@@ -29,7 +29,7 @@ response
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
-(2.1) /PUT      /filme/:id/imagem
+(2.1) /PUT      /filme/:id/imagem  X
 requestbody
 {
     "imagem": ""
@@ -39,7 +39,7 @@ response
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
-(3)/PUT /filme/:id
+(3)/PUT /filme/:id  X
 
 requestbody
 {
@@ -55,12 +55,12 @@ response(204)
 --sem conteúdo
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-(4)     /DELETE     /filme/:id
+(4)     /DELETE     /filme/:id  X
 response (204)
 --sem conteudo
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-(5) /GET        /filme
+(5) /GET        /filme   X
 response
 [
     "nome":"",
@@ -81,7 +81,7 @@ response
         "usuario":0
     }
 ]
-(7) /GET        /filme/:id
+(7) /GET        /filme/:id     X
 response
 {
     "nome":"",
